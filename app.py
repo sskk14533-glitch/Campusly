@@ -3,8 +3,10 @@ import sqlite3, hashlib, secrets, os
 from datetime import datetime, date, timedelta
 from pathlib import Path
 
-DB_PATH = '/content/campusly.db'
 BASE_DIR = Path(__file__).resolve().parent
+
+DB_PATH = str(BASE_DIR / "campusly.db")
+
 UPLOAD_DIR = BASE_DIR / "uploads"
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 NAVY, YELLOW, CREAM, LAVENDER = '#192653', '#FFC66B', '#FFF9F1', '#E7E5F7'
