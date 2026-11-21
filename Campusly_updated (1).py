@@ -4,8 +4,10 @@ from datetime import datetime, date, timedelta
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
-DB_PATH = str(BASE_DIR / 'campusly.db')
-UPLOAD_DIR = BASE_DIR / 'campusly_uploads'
+
+DB_PATH = str(BASE_DIR / "campusly.db")
+
+UPLOAD_DIR = BASE_DIR / "uploads"
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 CHAT_UPLOAD_DIR = UPLOAD_DIR / 'chat_files'
 CHAT_UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
