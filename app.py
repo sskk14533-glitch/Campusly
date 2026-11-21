@@ -4,8 +4,9 @@ from datetime import datetime, date, timedelta
 from pathlib import Path
 
 DB_PATH = '/content/campusly.db'
-UPLOAD_DIR = Path('/content/campusly_uploads')
-UPLOAD_DIR.mkdir(exist_ok=True)
+BASE_DIR = Path(__file__).resolve().parent
+UPLOAD_DIR = BASE_DIR / "uploads"
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 NAVY, YELLOW, CREAM, LAVENDER = '#192653', '#FFC66B', '#FFF9F1', '#E7E5F7'
 CATS = ['Books & Notes', 'University Supplies', 'Food & Drinks', 'Handmade', 'Printing', 'Services', 'Other']
 
