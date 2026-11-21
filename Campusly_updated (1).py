@@ -22,6 +22,24 @@ CATS = ['Books & Notes', 'University Supplies', 'Food & Drinks', 'Handmade', 'Pr
 
 st.set_page_config(page_title='Campusly', page_icon='🎓', layout='wide')
 
+st.markdown(
+    """
+    <style>
+    #GithubIcon {
+        display: none !important;
+    }
+
+    .viewerBadge_container__1QSob,
+    .viewerBadge_link__1S137,
+    [data-testid="stToolbar"] {
+        display: none !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 st.markdown(f'''<style>
 .stApp{{background:{CREAM};color:{NAVY}}}
 [data-testid="stSidebar"]{{background:{NAVY}}}
